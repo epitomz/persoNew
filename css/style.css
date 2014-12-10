@@ -1,6 +1,6 @@
 /* ---------------- navbar ----------------- */
 .navbar-default .navbar-nav>li>a:focus {
-	outline: none;	
+	box-shadow: none;
 }
 
 /* --------------- left menu --------------- */
