@@ -50,15 +50,46 @@
         </ul>
     </div>
     
-    <!-- Contenu -->
-    <div class="profil">
-        <h1>Photographie</h1>
-    </div>
-   
+    <!-- Contenu -->   
+   <div class="contenu-form">
+		<div id="main" style="padding:50px 0 0 0;">
+		
+		<!-- Form -->
+		<form id="contact-form" action="contact.php" method="post">
+			<h3>N'hésitez pas à me contacter !</h3>
+			<h4>Pour ce faire, voici le formulaire de contact :</h4>
+			<div>
+				<label>
+					<span>Nom <span class="red">(*)</span></span>
+					<input placeholder="Votre nom et prénom" type="text" tabindex="1" required autofocus>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Email <span class="red">(*)</span></span>
+					<input placeholder="Votre adresse Email" type="email" tabindex="2" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Message <span class="red">(*)</span></span>
+					<textarea placeholder="Ecrire le message ici" tabindex="5" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button name="submit" type="submit" id="contact-submit">Envoyer</button>
+			</div>
+		</form>
+		<!-- /Form -->
+		
+		</div>
+	</div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
