@@ -51,8 +51,22 @@
     </div>
     
     <!-- Contenu -->
-    <div class="experience">
+    <div class="contenu">
         <h1>Expérience</h1>
+        <div id="exp-1" class="experience exp-left">
+	        <h2>2014-...</h2>
+	        <h3>Ingénieur étude et développement</h3>
+	        
+        </div>
+        <div id="exp-2" class="experience">
+	        <h2>2013-2014</h2>
+	        <h3>Auto-entrepreneur</h3>
+	        
+        </div>
+        <div id="exp-3" class="experience">
+	        <h2>2013</h2>
+	        <h3>Ingénieur étude et développement</h3>
+	        
     </div>
    
 
@@ -60,5 +74,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="jquery-2.1.1"></script>
+    <script>
+	    var modWidth = 500;
+	    var originWidth = 310;
+	    var testWidth = $( "#exp-1" ).css("width");
+	    alert (testWidth);
+	    
+	    if (testWidth == originWidth) {
+		    $( "#exp-1" ).click(function() {
+				
+				
+			});
+			
+		}
+		else {
+			$( "#exp-1" ).click(function() {
+				$( "#exp-1" ).width(originWidth);
+			});	
+		}    
+	    
+	    
+	    
+    </script>
   </body>
 </html>
