@@ -8,6 +8,27 @@
 	padding-bottom: 10px;
 }
 
+.contenu {
+	margin-left: 200px;
+}
+
+body {
+	background: #292929;
+	
+
+}
+
+body h1, h2, h3, p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
 @media (min-width: 768px) {
 	
 	.navbar-brand {
