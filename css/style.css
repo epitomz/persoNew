@@ -1,4 +1,4 @@
-/* ---------------- navbar ----------------- */
+/* ---------------- general ----------------- */
 .navbar-default .navbar-nav>li>a:focus {
 	box-shadow: none;
 }
@@ -8,14 +8,25 @@
 	padding-bottom: 10px;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+	color: #2d7b69;
+}
+
+.navbar {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
 .contenu {
 	margin-left: 200px;
 }
 
-body {
-	background: #292929;
-	
+.contenu h1 {
+	margin-bottom: 20px;
+}
 
+body {
+	background: #292929;	
 }
 
 body h1, h2, h3, p {
@@ -188,27 +199,21 @@ a {
 
 /* ----------- Expérience ------------ */
 .experience {
-	width: 310px;
-	min-height: 310px;
-	border-top: 5px solid #3f3f3f;
+	border-top: 5px solid #2d7b69;
 	display: inline-block;
-	margin: 15px;
 	padding: 15px;
 	border-radius: 10px;
 	background: #2f2f2f;
 	float: left;
+	margin: 0 20px 20px 0;
 }
 
 .experience:hover {
 	background: #3f3f3f;
 	cursor: pointer;
-	border-top: 5px solid #4f4f4f;
+	border-top: 5px solid #37947e;
 }
 
 .experience h2 {
 	margin-top: 0;
-}
-
-.exp-left {
-	margin-left: 0;
 }

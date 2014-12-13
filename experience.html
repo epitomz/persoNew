@@ -53,19 +53,20 @@
     <!-- Contenu -->
     <div class="contenu">
         <h1>Expérience</h1>
-        <div id="exp-1" class="experience exp-left">
+        <div id="exp-1" class="experience" style="width: 310px; height: 300px;">
 	        <h2>2014-...</h2>
 	        <h3>Ingénieur étude et développement</h3>
 	        
         </div>
-        <div id="exp-2" class="experience">
+        <div id="exp-2" class="experience" style="width: 310px; height: 300px;">
 	        <h2>2013-2014</h2>
 	        <h3>Auto-entrepreneur</h3>
 	        
         </div>
-        <div id="exp-3" class="experience">
+        <div id="exp-3" class="experience" style="width: 310px; height: 300px;">
 	        <h2>2013</h2>
 	        <h3>Ingénieur étude et développement</h3>
+        </div>
 	        
     </div>
    
@@ -76,26 +77,116 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery-2.1.1"></script>
     <script>
-	    var modWidth = 500;
-	    var originWidth = 310;
-	    var testWidth = $( "#exp-1" ).css("width");
-	    alert (testWidth);
-	    
-	    if (testWidth == originWidth) {
-		    $( "#exp-1" ).click(function() {
+	    var mod1 = false;
+	    var mod2 = false;
+	    var mod3 = false;
+		var originWidth = 310;
+		var modWidth = 500;
+		var originHeight = 300;
+		var modHeight = 620;
+	        
+	    $("#exp-1").click(function() {
+	    	if (mod1 == false) {
+		    	$(this).animate({
+			    	width: modWidth,
+			    	height: modHeight
+			    });
+				mod1 = true;
 				
+				if (mod2 == true) {
+					$("#exp-2").animate({
+						width: originWidth,
+						height: originHeight						
+					});
+					mod2 = false;
+				}
 				
-			});
+				if (mod3 == true) {
+					$("#exp-3").animate({
+						width: originWidth,
+						height: originHeight					
+					});
+					mod3 = false;
+				}
+			}			
 			
-		}
-		else {
-			$( "#exp-1" ).click(function() {
-				$( "#exp-1" ).width(originWidth);
-			});	
-		}    
-	    
-	    
-	    
+			else {
+				$(this).animate({
+					width: originWidth,
+					height: originHeight
+				});
+				mod1 = false;
+			}
+		});
+		
+		$("#exp-2").click(function() {
+	    	if (mod2 == false) {
+		    	$(this).animate({
+			    	width: modWidth,
+			    	height: modHeight
+			    });
+				mod2 = true;
+				
+				if (mod1 == true) {
+					$("#exp-1").animate({
+						width: originWidth,
+						height: originHeight						
+					});
+					mod1 = false;
+				}
+				
+				if (mod3 == true) {
+					$("#exp-3").animate({
+						width: originWidth,
+						height: originHeight					
+					});
+					mod3 = false;
+				}
+			}			
+			
+			else {
+				$(this).animate({
+					width: originWidth,
+					height: originHeight
+				});
+				mod2 = false;
+			}
+		});
+
+		$("#exp-3").click(function() {
+	    	if (mod3 == false) {
+		    	$(this).animate({
+			    	width: modWidth,
+			    	height: modHeight
+			    });
+				mod3 = true;	
+				
+				if (mod1 == true) {
+					$("#exp-1").animate({
+						width: originWidth,
+						height: originHeight						
+					});
+					mod1 = false;
+				}
+				
+				if (mod2 == true) {
+					$("#exp-2").animate({
+						width: originWidth,
+						height: originHeight					
+					});
+					mod2 = false;
+				}
+			}			
+			
+			else {
+				$(this).animate({
+					width: originWidth,
+					height: originHeight
+				});
+				mod3 = false;
+			}
+		});
+   
     </script>
   </body>
 </html>
