@@ -29,7 +29,7 @@ body {
 	background: #292929;	
 }
 
-body h1, h2, h3, p {
+body h1, h2, h3, p, li {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	color: white;
@@ -68,29 +68,21 @@ a {
 	position:relative;
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form input[type="url"],
-#contact-form textarea,
-#contact-form button[type="submit"] {
-	font:400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 #contact-form {
-	text-shadow:0 1px 0 #FFF;
-	border-radius:4px;
-	-webkit-border-radius:4px;
-	-moz-border-radius:4px;
-	background:#F9F9F9;
-	padding:40px;
+	border-top: 5px solid #2d7b69;
+	display: inline-block;
+	padding: 50px;
+	border-radius: 10px;
+	background: #2f2f2f;
+	float: left;
+	margin: 0 20px 20px 0;
 }
 
 #contact-form h3 {
-	color:#991D57;
+	color: white;
 	display:block;
 	font-size:28px;
-	margin-top:0;
+	margin: 0;
 }
 
 #contact-form h4 {
@@ -100,11 +92,10 @@ a {
 }
 
 #contact-form label span {
-	cursor:pointer;
-	color:#991D57;
+	color: white;
 	display:block;
 	margin:5px 0;
-	font-weight:900;
+	font-weight:300;
 }
 
 #contact-form input[type="text"],
@@ -143,10 +134,7 @@ a {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#991D57;
-	background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-	background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
-	background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+	background:#2d7b69;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -154,9 +142,7 @@ a {
 }
 
 #contact-form button[type="submit"]:hover {
-	background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-	background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-	background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+    background: #37947e;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
@@ -201,7 +187,7 @@ a {
 .experience {
 	border-top: 5px solid #2d7b69;
 	display: inline-block;
-	padding: 15px;
+	padding: 20px;
 	border-radius: 10px;
 	background: #2f2f2f;
 	float: left;
@@ -216,4 +202,11 @@ a {
 
 .experience h2 {
 	margin-top: 0;
+}
+
+/* ----------- Photographie ------------ */
+.centre {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }

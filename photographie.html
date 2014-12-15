@@ -51,8 +51,13 @@
     </div>
     
     <!-- Contenu -->
-    <div class="profil">
+    <div class="photography">
         <h1>Photographie</h1>
+    </div>
+    
+    <div class="centre">
+        <h3>Pour voir toutes mes photographies, <br/>rendez-vous sur</h3>
+        <a href="http://500px.com/epitomz"><img id="500px" src="img/500px-white.png" data-alt-src="img/500px-green.png" style="width: 70px;"/></a>
     </div>
    
 
@@ -60,5 +65,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    /* -------------- Changement photo 500px ----------------- */
+    var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
+
+    $( document ).ready(function() {
+        $('#500px').hover(sourceSwap, sourceSwap);
+    });
+    </script>
   </body>
 </html>
