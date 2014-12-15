@@ -1,4 +1,4 @@
-/* ---------------- fonts ----------------- */
+/* ------------------- fonts ------------------- */
 @font-face{
     font-family : 'myFont';
     src : url('../fonts/myFontRegular.ttf') format('truetype');
@@ -233,23 +233,34 @@ a {
 }
 
 /* ----------- Photographie ------------ */
-.centre {
-    width: 500px;
-    margin: 0 auto;
-    text-align: center;
+.text-500px {
+    padding: 20px;
+}
+
+.text-500px h3 {
+    font-family: "myFont", Helvetica;
 }
 
 .photography {
-    width: 150px;
-    height: 600px;
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
 }
 
 .photo {
-    display: inline-block;
-    width: 100px;
+    display: block;
+    position: absolute;
+    width: 285px;
     height: 100px;
-    margin: 20px;
-    border: 1px solid white;
+    margin: 5px;
+    border: 1px solid #3f3f3f;
+    cursor: pointer;
+}
+
+.photo:hover {
+    opacity: 0.6;
 }
 
 .photo h3 {
