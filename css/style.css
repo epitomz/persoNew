@@ -233,36 +233,30 @@ a {
 }
 
 /* ----------- Photographie ------------ */
-.text-500px {
-    padding: 20px;
-}
-
-.text-500px h3 {
-    font-family: "myFont", Helvetica;
-}
-
 .photography {
     width: 80%;
     margin-left: 200px;
     margin-top: 10px;
     position: absolute;
-    z-index: 1;
+    height: 100%;
 }
 
-.photo {
-    display: block;
-    position: absolute;
-    width: 285px;
-    height: 100px;
-    margin: 5px;
+.col {
+    position: relative;
+    width: 23%;
+    display: inline-block;
+    height: 80%;
+    margin: 0 0.3%;
+}
+
+.col img {
+    width: 100%;
+    margin-bottom: 15px;
+    float: left;
     border: 1px solid #3f3f3f;
-    cursor: pointer;
 }
 
-.photo:hover {
+.col img:hover {
     opacity: 0.6;
-}
-
-.photo h3 {
-    margin-top: 0px;
+    cursor: pointer;
 }
