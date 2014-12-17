@@ -119,6 +119,9 @@ a {
 .left-menu a {
     display: inline-block;
     cursor: pointer;
+    color: #777;
+    font-size: 18px;
+    min-width: 185px;
 }
 
 /* ----------- Formulaire contact ------------ */
