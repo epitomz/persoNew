@@ -59,6 +59,10 @@
 	.collapse .navbar-nav {
 		display: none;
 	}
+    
+    .contenu {
+        margin-left: 225px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -66,10 +70,10 @@
 	.left-menu{
 		display: none;
 	}
-}
-
-.contenu {
-	margin-left: 200px;
+    
+    .contenu {
+        margin-left: 25px;
+    }
 }
 
 .contenu h1 {
@@ -108,7 +112,7 @@ a {
 /* --------------- left menu --------------- */
 .left-menu {
     width: 200px;
-    background-color: #d9d9d9;
+    background-color: #292929;
     float: left;
 }
 
@@ -264,7 +268,6 @@ a {
 /* ----------- Photographie ------------ */
 .photography {
     width: 80%;
-    margin-left: 225px;
     margin-top: 10px;
     position: absolute;
 
