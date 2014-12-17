@@ -40,6 +40,34 @@
     margin-top: 10px;
 }
 
+.navbar-collapse {
+    background: #3f3f3f;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: #777;
+}
+
+.navbar-toggle {
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+	
+	.collapse .navbar-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.left-menu{
+		display: none;
+	}
+}
+
 .contenu {
 	margin-left: 200px;
 }
@@ -81,6 +109,7 @@ a {
 .left-menu {
     width: 200px;
     background-color: #d9d9d9;
+    float: left;
 }
 
 .left-menu a {
@@ -235,7 +264,7 @@ a {
 /* ----------- Photographie ------------ */
 .photography {
     width: 80%;
-    margin-left: 200px;
+    margin-left: 225px;
     margin-top: 10px;
     position: absolute;
 
