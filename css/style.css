@@ -90,10 +90,10 @@ a {
 
 /* ----------- Formulaire contact ------------ */
 .contenu-form {
-	max-width:600px;
-	width:95%;
-	margin:0 auto;
-	position:relative;
+	max-width: 600px;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
 }
 
 #contact-form {
@@ -238,14 +238,13 @@ a {
     margin-left: 200px;
     margin-top: 10px;
     position: absolute;
-    height: 100%;
+
 }
 
 .col {
     position: relative;
     width: 23%;
     display: inline-block;
-    height: 80%;
     margin: 0 4px;
 }
 
@@ -267,8 +266,8 @@ a {
 		width: 45%;;
 	}
     
-    .col3 {
-        margin-top: 30px;
+    .col1, .col2 {
+        margin-bottom: -4px;
     }
 }
 
@@ -277,8 +276,8 @@ a {
     .col {
         width: 80%;
     }
+    
 }
-
 
 .modal-backdrop.in {
     opacity: 0.8;
@@ -291,8 +290,12 @@ a {
 .modal-pic {
     display: inline-block;
     float: left;
-    height: 90%;
-    width: 55%
+    height: 80%;
+    width: 55%;
+}
+
+.modal-pic img {
+    height: 600px;
 }
 
 .modal-title {
