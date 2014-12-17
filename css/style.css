@@ -69,7 +69,7 @@ a {
 	font-weight: 300;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 855px) {
 	
 	.navbar-brand {
 		padding: 15px 20px;
@@ -246,12 +246,12 @@ a {
     width: 23%;
     display: inline-block;
     height: 80%;
-    margin: 0 0.3%;
+    margin: 0 4px;
 }
 
 .col img {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     float: left;
     border: 1px solid #3f3f3f;
 }
@@ -259,4 +259,53 @@ a {
 .col img:hover {
     opacity: 0.6;
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+	
+	.col {
+		width: 45%;;
+	}
+    
+    .col3 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 855px) {
+
+    .col {
+        width: 80%;
+    }
+}
+
+
+.modal-backdrop.in {
+    opacity: 0.8;
+}
+
+.modal-dialog {
+    width: 70%;
+}
+
+.modal-pic {
+    display: inline-block;
+    float: left;
+    height: 90%;
+    width: 55%
+}
+
+.modal-title {
+    display: inline-block;
+    float: left;
+    color: white;
+}
+
+.close {
+    color: white;
+    opacity: 0.8;
+}
+
+.close:hover {
+    color: #3f3f3f;
 }
