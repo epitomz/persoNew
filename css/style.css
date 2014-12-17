@@ -109,6 +109,13 @@ a {
 	}
 }
 
+@media (max-width: 768px) {
+	
+	.navbar-brand {
+		margin-left: 10px;
+	}
+}
+
 /* --------------- left menu --------------- */
 .left-menu {
     width: 200px;
