@@ -320,7 +320,7 @@ a {
     cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 856px) and (max-width: 1200px) {
 	
 	.col {
 		width: 45%;;
