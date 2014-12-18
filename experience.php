@@ -12,6 +12,7 @@
             <img class="sopra" src="img/sopra.png" />
 	        <h3>Ingénieur étude et développement</h3>
             <h4><i>SOPRA (Bordeaux, 33)</i></h4>
+            <p>Lalala nous irons aux bois</p>
             <div class="details" style="display: none">
                 <ul>
                     <li></li>
@@ -25,11 +26,15 @@
 	        <h2>2013-2014</h2>
 	        <h3>Auto-entrepreneur</h3>
             <h4><i>Toulouse, 31</i></h4>
-            <p>Réalisation d'audits énergétiques</p>
+            <p>Réalisation d'études énergétiques de bâtiments avec le logiciel ArchiWIZARD</p>
             <div class="details" style="display: none">
                 <ul>
-                    <li>Conception d'un outil de calcul automatique de DPE (méthode 3CL-DPE)</li>
-                    <li>lalala</li>
+                    <li>Modélisation 3D de bâtiments (SketchUp) puis modélisation énergétique (ArchiWIZARD)</li>
+                    <li>Réalisation d'études paramétriques (Bbio/Cep/Tic) selon la méthode de calcul imposée par la RT 2012</li>
+                    <li>Réalisation d'étude d'ensoleillement (FLJ, besoins et consommations de chauffage) selon les normes HQE et RT 2012</li>
+                    <li>Etude de l'impact du choix des vitrages (TL, FS et sélectivité) sur les besoins d'un bâtiment</li>
+                    <li>Rédaction de rapports : bilan et conseils</li>
+                    <li>Différents clients : Bouygues Immobilier, expertise judiciaire, HPC-SA, etc.</li>
                 </ul>
             </div>
         </div>
@@ -67,7 +72,7 @@ include('script.php');
 ?>   
 
     <script type="text/javascript">
-
+    /* --------------- Fonctions de test si div ouvert ----------------- */
         function test1() {
             if (mod1 == true) {
 				$("#exp-1").animate({
@@ -119,7 +124,7 @@ include('script.php');
 		var originWidth = 310;
 		var modWidth = 500;
 		var originHeight = 300;
-		var modHeight = 620;
+		var modHeight = 500;
 	        
 	    $("#exp-1").click(function() {
 	    	if (mod1 == false) {
