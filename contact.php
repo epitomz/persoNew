@@ -1,6 +1,7 @@
 <?php
-include('header.php');
-include('navbar.php');
+    $title = "Contact";
+    include('header.php');
+    include('navbar.php');
 ?>
     
     <!-- Contenu -->   

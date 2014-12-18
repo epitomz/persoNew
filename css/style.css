@@ -289,8 +289,46 @@ a {
 	border-top: 5px solid #37947e;
 }
 
+#exp-1 h2 {
+    display: inline-block;
+    float: left;
+}
+
+#exp-3 h2, #exp-2 h2, #exp-1 h2 {
+	margin-bottom: 15px;
+}
+
+#exp-3 h2 {
+	margin-top: 0;
+    display: inline-block;
+    float: left;
+}
+
 .experience h2 {
 	margin-top: 0;
+}
+
+.experience h3 {
+	margin-top: 0;
+    display: inline-block;
+}
+
+.experience h4 {
+    color: white;
+}
+
+.hpcsa {
+    display: inline-block;
+    width: 200px;
+    margin-top: -18px;
+    float: right;
+}
+
+.sopra {
+    display: inline-block;
+    width: 160px;
+    margin-top: -15px;
+    float: right;
 }
 
 /* ----------- Photographie ------------ */
