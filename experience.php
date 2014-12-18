@@ -32,9 +32,23 @@
                     <li>lalala</li>
                 </ul>
             </div>
-	        
         </div>
+            
         <div id="exp-3" class="experience" style="width: 310px; height: 300px;">
+	        <h2>2013-2014</h2>
+	        <h3>Graphic web Designer</h3>
+            <h4><i>Smart'Unity (Toulouse, 31)</i></h4>
+            <p>Conception du site smartunity.fr</p>
+            <div class="details" style="display: none">
+                <ul>
+                    <li>Définition de la charte graphique du site</li>
+                    <li>Maquettage du site</li>
+                    <li>Développement de la partie front-end (HTML5, CSS3, JSON, Javascript)</li>
+                </ul>
+            </div>
+        </div>
+	       
+        <div id="exp-4" class="experience" style="width: 310px; height: 300px;">
 	        <h2>2013</h2>
             <img class="hpcsa" src="img/hpc-sa.png" />
 	        <h3>Stage ingénieur R&amp;D</h3>
@@ -48,17 +62,60 @@
             </div>
         </div>
 	        
-    </div>
-
 <?php
 include('script.php');
 ?>   
 
-    <script type="text/javascript">       
+    <script type="text/javascript">
+
+        function test1() {
+            if (mod1 == true) {
+				$("#exp-1").animate({
+					width: originWidth,
+					height: originHeight						
+				});
+                   $("#exp-1 > .details").hide();
+				mod1 = false;
+			}
+        }
+        
+        function test2() {
+            if (mod2 == true) {
+				$("#exp-2").animate({
+					width: originWidth,
+					height: originHeight						
+				});
+                   $("#exp-2 > .details").hide();
+				mod2 = false;
+			}
+        }
+        
+        function test3() {
+            if (mod3 == true) {
+				$("#exp-3").animate({
+					width: originWidth,
+					height: originHeight						
+				});
+                   $("#exp-3 > .details").hide();
+				mod3 = false;
+			}
+        }
+        
+        function test4() {
+            if (mod4 == true) {
+				$("#exp-4").animate({
+					width: originWidth,
+					height: originHeight						
+				});
+                   $("#exp-4 > .details").hide();
+				mod4 = false;
+			}
+        }
     /* -------------------- Changement taille div contenu au clic ----------------------- */
 	    var mod1 = false;
 	    var mod2 = false;
 	    var mod3 = false;
+        var mod4 = false;
 		var originWidth = 310;
 		var modWidth = 500;
 		var originHeight = 300;
@@ -74,23 +131,9 @@ include('script.php');
                 });
 				mod1 = true;
 				
-				if (mod2 == true) {
-					$("#exp-2").animate({
-						width: originWidth,
-						height: originHeight						
-					});
-                    $("#exp-2 > .details").hide();
-					mod2 = false;
-				}
-				
-				if (mod3 == true) {
-					$("#exp-3").animate({
-						width: originWidth,
-						height: originHeight					
-					});
-                    $("#exp-3 > .details").hide();
-					mod3 = false;
-				}
+				test2();
+                test3();
+                test4();
 			}			
 			
 			else {
@@ -113,23 +156,9 @@ include('script.php');
                 });
 				mod2 = true;
 				
-				if (mod1 == true) {
-					$("#exp-1").animate({
-						width: originWidth,
-						height: originHeight						
-					});
-                    $("#exp-1 > .details").hide();
-					mod1 = false;
-				}
-				
-				if (mod3 == true) {
-					$("#exp-3").animate({
-						width: originWidth,
-						height: originHeight					
-					});
-                    $("#exp-3 > .details").hide();
-					mod3 = false;
-				}
+				test1();
+                test3();
+                test4();
 			}			
 			
 			else {
@@ -152,23 +181,9 @@ include('script.php');
                 });
 				mod3 = true;	
 				
-				if (mod1 == true) {
-					$("#exp-1").animate({
-						width: originWidth,
-						height: originHeight						
-					});
-                    $("#exp-1 > .details").hide();
-					mod1 = false;
-				}
-				
-				if (mod2 == true) {
-					$("#exp-2").animate({
-						width: originWidth,
-						height: originHeight					
-					});
-                    $("#exp-2 > .details").hide();
-					mod2 = false;
-				}
+				test1();
+                test2();
+                test4();
 			}			
 			
 			else {
@@ -178,6 +193,31 @@ include('script.php');
 				});
                 $("#exp-3 > .details").hide();
 				mod3 = false;
+			}
+		});
+        
+        $("#exp-4").click(function() {
+	    	if (mod4 == false) {
+		    	$(this).animate({
+			    	width: modWidth,
+			    	height: modHeight,
+			    }, function() {
+                    $("#exp-4 > .details").show();
+                });
+				mod4 = true;	
+				
+				test1();
+                test2();
+                test3();
+			}			
+			
+			else {
+				$(this).animate({
+					width: originWidth,
+					height: originHeight
+				});
+                $("#exp-4 > .details").hide();
+				mod4 = false;
 			}
 		});
    
